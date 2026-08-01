@@ -175,7 +175,7 @@ const organizationChartData = {
 
         children: [
           {
-            title: "Software Development",
+            title: "Software Developer",
             name: "Harsha Raj K",
           },
         ],
