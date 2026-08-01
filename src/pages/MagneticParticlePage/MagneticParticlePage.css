@@ -1,0 +1,272 @@
+/* ===================================
+   Main Page
+=================================== */
+
+.magnetic-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 20px 80px;
+  }
+  
+  /* ===================================
+     Page Heading
+  =================================== */
+  
+  .page-heading {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .page-heading h2 {
+    font-size: 2.7rem;
+    color: #003366;
+    margin-bottom: 25px;
+    font-weight: 700;
+  }
+  
+  .page-heading p {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #555;
+    font-size: 1.08rem;
+    line-height: 1.9;
+  }
+  
+  /* ===================================
+     Inspection Card
+  =================================== */
+  
+  .inspection-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 45px;
+    margin-bottom: 55px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  }
+  
+  .inspection-title {
+    font-size: 2.2rem;
+    color: #003366;
+    margin-bottom: 35px;
+    text-align: center;
+  }
+  
+  .inspection-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    align-items: center;
+  }
+  
+  .inspection-body.inspection-reverse .inspection-image {
+    order: 2;
+  }
+  
+  .inspection-body.inspection-reverse .inspection-content {
+    order: 1;
+  }
+  
+  /* ===================================
+     Image
+  =================================== */
+  
+  .inspection-image img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 14px;
+    display: block;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    transition: transform .3s ease;
+  }
+  
+  .inspection-image img:hover {
+    transform: scale(1.02);
+  }
+  
+  /* ===================================
+     Content
+  =================================== */
+  
+  .inspection-content p {
+    color: #555;
+    line-height: 1.9;
+    margin-bottom: 30px;
+    font-size: 1.03rem;
+  }
+  
+  .inspection-content h4 {
+    color: #003366;
+    font-size: 1.45rem;
+    margin-bottom: 15px;
+    margin-top: 25px;
+  }
+  
+  .inspection-content ul {
+    padding-left: 22px;
+  }
+  
+  .inspection-content li {
+    margin-bottom: 12px;
+    color: #555;
+    line-height: 1.8;
+    font-size: 1.02rem;
+  }
+  
+  /* ===================================
+     Information Note
+  =================================== */
+  
+  .inspection-note {
+    background: #eef5fb;
+    border-left: 6px solid #003366;
+    border-radius: 12px;
+    padding: 24px 30px;
+    margin-bottom: 55px;
+  }
+  
+  .inspection-note strong {
+    color: #003366;
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  
+  /* ===================================
+     Accordion
+  =================================== */
+  
+  .accordion-section {
+    margin-bottom: 70px;
+  }
+  
+  .accordion-item {
+    margin-bottom: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+  }
+  
+  .accordion-header {
+    width: 100%;
+    border: none;
+    background: #0b4f96;
+    color: white;
+    padding: 20px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.05rem;
+    font-weight: 600;
+    transition: background .3s;
+  }
+  
+  .accordion-header:hover,
+  .accordion-header.active {
+    background: #003366;
+  }
+  
+  .accordion-content {
+    background: white;
+    padding: 28px;
+    animation: fadeIn .3s ease;
+  }
+  
+  .accordion-content p {
+    color: #555;
+    line-height: 1.9;
+  }
+  
+  /* ===================================
+     Animation
+  =================================== */
+  
+  @keyframes fadeIn {
+  
+    from {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  
+  }
+  
+  /* ===================================
+     Tablet
+  =================================== */
+  
+  @media (max-width: 992px) {
+  
+    .inspection-card {
+      padding: 35px;
+    }
+  
+    .inspection-body {
+      grid-template-columns: 1fr;
+      gap: 35px;
+    }
+  
+    .inspection-body.inspection-reverse .inspection-image,
+    .inspection-body.inspection-reverse .inspection-content {
+      order: unset;
+    }
+  
+    .inspection-title {
+      font-size: 1.9rem;
+    }
+  
+    .inspection-image img {
+      height: 340px;
+    }
+  
+  }
+  
+  /* ===================================
+     Mobile
+  =================================== */
+  
+  @media (max-width: 768px) {
+  
+    .magnetic-page {
+      padding: 50px 20px 60px;
+    }
+  
+    .page-heading h2 {
+      font-size: 2rem;
+    }
+  
+    .page-heading p {
+      font-size: 1rem;
+    }
+  
+    .inspection-card {
+      padding: 25px;
+    }
+  
+    .inspection-title {
+      font-size: 1.6rem;
+      margin-bottom: 25px;
+    }
+  
+    .inspection-image img {
+      height: 250px;
+    }
+  
+    .inspection-content h4 {
+      font-size: 1.25rem;
+    }
+  
+    .accordion-header {
+      padding: 16px 20px;
+      font-size: .95rem;
+    }
+  
+    .accordion-content {
+      padding: 20px;
+    }
+  
+  }

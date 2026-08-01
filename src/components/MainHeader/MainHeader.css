@@ -1,0 +1,102 @@
+.main-header {
+  background: white;
+  padding: 18px 0;
+}
+
+/* Scope container ONLY to Main Header */
+.main-header .container {
+  width: 90%;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ===========================
+ LOGO
+=========================== */
+
+.logo img {
+  height: 70px;
+}
+
+/* ===========================
+ COMPANY INFO
+=========================== */
+
+.company-info {
+  text-align: center;
+  flex: 1;
+}
+
+.company-info h1 {
+  font-size: 34px;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.company-info h2 {
+  font-size: 22px;
+  color: #555;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* ===========================
+ CONTACT
+=========================== */
+
+.header-contact {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.phone-icon {
+  font-size: 34px;
+}
+
+.phone-details {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.phone-details a {
+  text-decoration: none;
+  color: #222;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.4;
+  transition: color 0.3s ease;
+}
+
+.phone-details a:hover {
+  color: #ff3b30;
+}
+
+/* ===========================
+ RESPONSIVE
+=========================== */
+
+@media (max-width: 992px) {
+
+  .main-header .container {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .company-info h1 {
+    font-size: 28px;
+  }
+
+  .company-info h2 {
+    font-size: 18px;
+  }
+
+  .header-contact {
+    justify-content: center;
+  }
+
+}

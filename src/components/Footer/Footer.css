@@ -1,0 +1,200 @@
+.footer {
+    background: #0f1f33;
+    color: #d7dee7;
+    padding: 70px 0 0;
+}
+
+/* ---------- Top ---------- */
+
+.footer-top {
+    display: grid;
+    grid-template-columns: 1.3fr 1.1fr 1.3fr 1.5fr;
+    gap: 45px;
+    padding-bottom: 50px;
+}
+
+/* ---------- Columns ---------- */
+
+.footer-column h3 {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 0 18px;
+    line-height: 1.5;
+}
+
+.footer-column h4 {
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.footer-column h4::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 55px;
+    height: 3px;
+    background: #e53935;
+    border-radius: 5px;
+}
+
+/* ---------- Logo ---------- */
+
+.footer-logo {
+    width: 180px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* ---------- Company ---------- */
+
+.footer-column p {
+    color: #c7d1dc;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+/* ---------- Lists ---------- */
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 14px;
+}
+
+/* Give some spacing before "View All Services" */
+
+.footer-column li:last-child {
+    margin-top: 12px;
+}
+
+/* ---------- Links ---------- */
+
+.footer-column a {
+    color: #d7dee7;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.footer-column a:hover {
+    color: #e53935;
+    padding-left: 6px;
+}
+
+/* ---------- View All Services ---------- */
+
+.view-all-services {
+    color: #e53935 !important;
+    font-weight: 700;
+    display: inline-block;
+    transition: all .3s ease;
+}
+
+.view-all-services:hover {
+    color: #ffffff !important;
+    transform: translateX(6px);
+}
+
+/* ---------- Contact ---------- */
+
+.footer-contact li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    line-height: 1.8;
+}
+
+.footer-icon {
+    color: #e53935;
+    font-size: 16px;
+    margin-top: 6px;
+    flex-shrink: 0;
+}
+
+/* ---------- Equal Height Footer Columns ---------- */
+
+.footer-column-services,
+.footer-column-contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column-content ul {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* ---------- Bottom ---------- */
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, .12);
+    text-align: center;
+    padding: 22px 0;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #bfc9d4;
+    font-size: 15px;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 1100px) {
+
+    .footer-top {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .footer {
+        padding-top: 55px;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding-bottom: 40px;
+    }
+
+    .footer-column {
+        text-align: center;
+    }
+
+    .footer-logo {
+        margin: 0 auto 20px;
+        display: block;
+    }
+
+    .footer-column h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-column a:hover {
+        padding-left: 0;
+    }
+
+    .footer-contact li {
+        justify-content: center;
+        text-align: left;
+    }
+
+}
