@@ -16,6 +16,8 @@ import CareersPage from "./pages/CareersPage/CareersPage";
 import ContactPage from "./pages/ContactPage/ContactPage";
 import RadiographyPage from "./pages/RadiographyPage/RadiographyPage";
 import MagneticParticlePage from "./pages/MagneticParticlePage/MagneticParticlePage";
+import GalleryPage from "./pages/GalleryPage/GalleryPage";
+import GalleryEventPage from "./pages/GalleryEventPage/GalleryEventPage";
 
 function App() {
   return (
@@ -61,7 +63,17 @@ function App() {
 
         <Route
           path="/services/magnetic-particle-dye-penetrant"
-         element={<MagneticParticlePage />}
+          element={<MagneticParticlePage />}
+        />
+
+        <Route
+          path="/resources/photo-gallery"
+          element={<GalleryPage />}
+        />
+
+        <Route
+           path="/resources/photo-gallery/:slug"
+           element={<GalleryEventPage />}
         />
 
       </Routes>
