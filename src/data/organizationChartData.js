@@ -169,13 +169,19 @@ const organizationChartData = {
         ],
       },
 
+     
+      {
+        title: "Secretary",
+        name: "Shripad Vedanti",
+        },
+
       {
         title: "IT Administrator",
         name: "Ashok M J",
 
         children: [
           {
-            title: "Software Developer",
+            title: "IT Assistant - Software Development",
             name: "Harsha Raj K",
           },
         ],
