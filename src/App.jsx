@@ -18,6 +18,8 @@ import RadiographyPage from "./pages/RadiographyPage/RadiographyPage";
 import MagneticParticlePage from "./pages/MagneticParticlePage/MagneticParticlePage";
 import GalleryPage from "./pages/GalleryPage/GalleryPage";
 import GalleryEventPage from "./pages/GalleryEventPage/GalleryEventPage";
+import OurOfficesPage from "./pages/OurOfficesPage/OurOfficesPage";
+import BoardOfDirectorsPage from "./pages/BoardOfDirectorsPage/BoardOfDirectorsPage";
 
 function App() {
   return (
@@ -34,6 +36,11 @@ function App() {
         <Route
           path="/about"
           element={<AboutPage />}
+        />
+
+        <Route
+          path="/board-of-directors"
+          element={<BoardOfDirectorsPage />}
         />
 
         <Route
@@ -74,6 +81,11 @@ function App() {
         <Route
            path="/resources/photo-gallery/:slug"
            element={<GalleryEventPage />}
+        />
+
+        <Route
+          path="/our-offices"
+          element={<OurOfficesPage />}
         />
 
       </Routes>

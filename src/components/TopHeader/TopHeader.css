@@ -18,16 +18,52 @@
     line-height: 1.5;
 }
 
+/* ==========================
+   Our Offices Button
+========================== */
+
 .office-btn {
+    display: inline-block;
+
     background: #ff3b3b;
     color: white;
-    border: none;
+
+    text-decoration: none;
+
     padding: 10px 20px;
-    cursor: pointer;
+
     font-size: 14px;
+    font-weight: 500;
+
     border-radius: 4px;
+
+    cursor: pointer;
+
+    transition: background 0.3s ease;
 }
 
 .office-btn:hover {
     background: #d60000;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width: 768px) {
+
+    .top-header-container {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .top-header-left p {
+        font-size: 12px;
+    }
+
+    .office-btn {
+        width: fit-content;
+    }
+
 }

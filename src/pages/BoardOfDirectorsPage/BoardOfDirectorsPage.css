@@ -1,0 +1,240 @@
+/* ===================================
+   Board of Directors Page
+=================================== */
+
+.board-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 20px 90px;
+  }
+  
+  /* ===================================
+     Introduction
+  =================================== */
+  
+  .board-introduction {
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  
+  .board-introduction h2 {
+    font-size: 2.5rem;
+    color: #003366;
+    margin-bottom: 20px;
+  }
+  
+  .board-introduction p {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #555;
+    font-size: 1.05rem;
+    line-height: 1.9;
+  }
+  
+  /* ===================================
+     Directors List
+  =================================== */
+  
+  .directors-list {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+  }
+  
+  /* ===================================
+     Director Card
+  =================================== */
+  
+  .director-card {
+    display: flex;
+    gap: 35px;
+  
+    background: #fff;
+  
+    border-radius: 16px;
+  
+    padding: 35px;
+  
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+  
+    transition: transform .3s ease,
+                box-shadow .3s ease;
+  }
+  
+  .director-card:hover {
+    transform: translateY(-5px);
+  
+    box-shadow: 0 18px 45px rgba(0,0,0,.12);
+  }
+  
+  /* ===================================
+     Image
+  =================================== */
+  
+  .director-image {
+    flex: 0 0 260px;
+  }
+  
+  .director-image img {
+    width: 100%;
+    display: block;
+  
+    border-radius: 12px;
+  
+    object-fit: cover;
+  
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+  }
+  
+  /* ===================================
+     Content
+  =================================== */
+  
+  .director-content {
+    flex: 1;
+  }
+  
+  .director-content h3 {
+    color: #003366;
+    font-size: 2rem;
+    margin-bottom: 8px;
+  }
+  
+  .director-content h4 {
+    color: #d52b1e;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+  }
+  
+  .director-short {
+    color: #555;
+    font-size: 1.05rem;
+    line-height: 1.9;
+    margin-bottom: 25px;
+  }
+  
+  /* ===================================
+     Biography
+  =================================== */
+  
+  .director-biography {
+    margin-bottom: 25px;
+  
+    animation: fadeIn .35s ease;
+  }
+  
+  .director-biography p {
+    color: #555;
+    line-height: 1.9;
+    margin-bottom: 18px;
+  }
+  
+  /* ===================================
+     Button
+  =================================== */
+  
+  .read-more-btn {
+    background: #003366;
+    color: white;
+  
+    border: none;
+  
+    padding: 12px 28px;
+  
+    border-radius: 6px;
+  
+    font-size: 15px;
+    font-weight: 600;
+  
+    cursor: pointer;
+  
+    transition: .3s;
+  }
+  
+  .read-more-btn:hover {
+    background: #0b4f96;
+  }
+  
+  /* ===================================
+     Animation
+  =================================== */
+  
+  @keyframes fadeIn {
+  
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  
+  }
+  
+  /* ===================================
+     Tablet
+  =================================== */
+  
+  @media (max-width: 992px) {
+  
+    .director-card {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .director-image {
+      flex: none;
+      max-width: 320px;
+      margin: 0 auto;
+    }
+  
+    .director-content h3 {
+      font-size: 1.8rem;
+    }
+  
+  }
+  
+  /* ===================================
+     Mobile
+  =================================== */
+  
+  @media (max-width: 768px) {
+  
+    .board-page {
+      padding: 50px 20px 70px;
+    }
+  
+    .board-introduction h2 {
+      font-size: 2rem;
+    }
+  
+    .board-introduction p {
+      font-size: 1rem;
+    }
+  
+    .director-card {
+      padding: 25px;
+      gap: 25px;
+    }
+  
+    .director-content h3 {
+      font-size: 1.6rem;
+    }
+  
+    .director-content h4 {
+      font-size: 1rem;
+    }
+  
+    .director-short,
+    .director-biography p {
+      font-size: 0.98rem;
+    }
+  
+    .read-more-btn {
+      width: 100%;
+    }
+  
+  }

@@ -1,0 +1,201 @@
+/* ===================================
+   Main Section
+=================================== */
+
+.our-offices-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+  }
+  
+  /* ===================================
+     Header
+  =================================== */
+  
+  .offices-header {
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  
+  .offices-header h2 {
+    font-size: 2.6rem;
+    color: #003366;
+    margin-bottom: 18px;
+  }
+  
+  .offices-header p {
+    max-width: 850px;
+    margin: 0 auto;
+    color: #666;
+    font-size: 1.05rem;
+    line-height: 1.9;
+  }
+  
+  /* ===================================
+     Office Grid
+  =================================== */
+  
+  .offices-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 35px;
+  }
+  
+  /* ===================================
+     Office Card
+  =================================== */
+  
+  .office-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 35px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+    transition: all 0.35s ease;
+  }
+  
+  .office-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+  }
+  
+  /* ===================================
+     Office Badge
+  =================================== */
+  
+  .office-type {
+    display: inline-block;
+    background: #003366;
+    color: #ffffff;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  /* ===================================
+     Office Title
+  =================================== */
+  
+  .office-card h3 {
+    font-size: 1.8rem;
+    color: #003366;
+    margin-bottom: 30px;
+    line-height: 1.3;
+  }
+  
+  /* ===================================
+     Details
+  =================================== */
+  
+  .office-details {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+  
+  .detail-item {
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 18px;
+  }
+  
+  .detail-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  
+  .detail-label {
+    display: block;
+    color: #003366;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  
+  .detail-item p {
+    color: #555555;
+    line-height: 1.8;
+    margin: 4px 0;
+  }
+  
+  /* ===================================
+     Button
+  =================================== */
+  
+  .directions-button {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 14px 30px;
+    background: #e53935;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .directions-button:hover {
+    background: #c62828;
+    transform: translateY(-2px);
+  }
+  
+  /* ===================================
+     Tablet
+  =================================== */
+  
+  @media (max-width: 992px) {
+  
+    .our-offices-page {
+      padding: 70px 20px;
+    }
+  
+    .offices-header h2 {
+      font-size: 2.2rem;
+    }
+  
+    .offices-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+  }
+  
+  /* ===================================
+     Mobile
+  =================================== */
+  
+  @media (max-width: 768px) {
+  
+    .our-offices-page {
+      padding: 55px 20px;
+    }
+  
+    .offices-header {
+      margin-bottom: 50px;
+    }
+  
+    .offices-header h2 {
+      font-size: 2rem;
+    }
+  
+    .offices-header p {
+      font-size: 1rem;
+    }
+  
+    .offices-grid {
+      grid-template-columns: 1fr;
+      gap: 25px;
+    }
+  
+    .office-card {
+      padding: 28px;
+    }
+  
+    .office-card h3 {
+      font-size: 1.5rem;
+    }
+  
+    .directions-button {
+      width: 100%;
+      text-align: center;
+    }
+  
+  }

@@ -1,4 +1,5 @@
 import "./TopHeader.css";
+import { Link } from "react-router-dom";
 
 function TopHeader() {
   return (
@@ -6,6 +7,7 @@ function TopHeader() {
       <div className="top-header-container">
 
         <div className="top-header-left">
+
           <p>
             An ISO Management System Certified Company ISO 9001 | ISO 14001 | ISO 45001
           </p>
@@ -13,12 +15,18 @@ function TopHeader() {
           <p>
             An ISO/IEC-17020 Certified Inspection Body. EIAC Certificate No. IB-167
           </p>
+
         </div>
 
         <div className="top-header-right">
-          <button className="office-btn">
+
+          <Link
+            to="/our-offices"
+            className="office-btn"
+          >
             Our Offices
-          </button>
+          </Link>
+
         </div>
 
       </div>
