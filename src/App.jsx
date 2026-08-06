@@ -21,6 +21,9 @@ import GalleryPage from "./pages/GalleryPage/GalleryPage";
 import GalleryEventPage from "./pages/GalleryEventPage/GalleryEventPage";
 import OurOfficesPage from "./pages/OurOfficesPage/OurOfficesPage";
 import BoardOfDirectorsPage from "./pages/BoardOfDirectorsPage/BoardOfDirectorsPage";
+import QualityPolicyPage from "./pages/QualityPolicyPage/QualityPolicyPage";
+import QHSEPolicyPage from "./pages/QHSEPolicyPage/QHSEPolicyPage";
+import ECataloguePage from "./pages/ECataloguePage/ECataloguePage";
 
 function App() {
   return (
@@ -77,6 +80,21 @@ function App() {
         <Route
           path="/services/ultrasonic-testing"
          element={<UltrasonicTestingPage />}
+        />
+
+        <Route
+          path="/quality-policy"
+          element={<QualityPolicyPage />}
+        />
+
+        <Route
+          path="/qhse-policy"
+          element={<QHSEPolicyPage />}
+        />
+
+        <Route
+          path="/resources/e-catalogue"
+          element={<ECataloguePage />}
         />
 
         <Route
