@@ -43,7 +43,7 @@ const ECataloguePage = () => {
         <div className="pdf-viewer">
 
             <iframe
-                src={`${pdf}#zoom=125`}
+                src={`${pdf}#zoom=100`}
                 title="GPTI E-Catalogue"
             />
 
