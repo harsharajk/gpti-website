@@ -1,6 +1,6 @@
 import bannerImage from "../assets/images/aboutPage/banner.jpg";
 
-import cataloguePdf from "../assets/pdfs/GPTI-Catalogue.pdf";
+import cataloguePdf from "../assets/pdfs/catalogue/GPTI-Catalogue.pdf";
 
 const eCatalogueData = {
   pageTitle: "E-Catalogue",

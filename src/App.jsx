@@ -24,6 +24,7 @@ import BoardOfDirectorsPage from "./pages/BoardOfDirectorsPage/BoardOfDirectorsP
 import QualityPolicyPage from "./pages/QualityPolicyPage/QualityPolicyPage";
 import QHSEPolicyPage from "./pages/QHSEPolicyPage/QHSEPolicyPage";
 import ECataloguePage from "./pages/ECataloguePage/ECataloguePage";
+import CertificatesPage from "./pages/CertificatesPage/CertificatesPage";
 
 function App() {
   return (
@@ -95,6 +96,11 @@ function App() {
         <Route
           path="/resources/e-catalogue"
           element={<ECataloguePage />}
+        />
+
+        <Route
+          path="/resources/certificates"
+          element={<CertificatesPage />}
         />
 
         <Route
