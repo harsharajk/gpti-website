@@ -25,6 +25,7 @@ import QualityPolicyPage from "./pages/QualityPolicyPage/QualityPolicyPage";
 import QHSEPolicyPage from "./pages/QHSEPolicyPage/QHSEPolicyPage";
 import ECataloguePage from "./pages/ECataloguePage/ECataloguePage";
 import CertificatesPage from "./pages/CertificatesPage/CertificatesPage";
+import ClientsUAEPage from "./pages/ClientsUAEPage/ClientsUAEPage";
 
 function App() {
   return (
@@ -91,6 +92,11 @@ function App() {
         <Route
           path="/qhse-policy"
           element={<QHSEPolicyPage />}
+        />
+
+        <Route
+          path="/clients/uae"
+          element={<ClientsUAEPage />}
         />
 
         <Route

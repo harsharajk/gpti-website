@@ -1,0 +1,136 @@
+/* ===================================
+   Main Page
+=================================== */
+
+.clients-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 20px 80px;
+  }
+  
+  /* ===================================
+     Page Heading
+  =================================== */
+  
+  .clients-heading {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .clients-heading h2 {
+    font-size: 2.7rem;
+    color: #003366;
+    margin-bottom: 25px;
+    font-weight: 700;
+  }
+  
+  .clients-heading p {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #555;
+    line-height: 1.9;
+    font-size: 1.08rem;
+  }
+  
+  /* ===================================
+     Clients Grid
+  =================================== */
+  
+  .clients-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+  
+  /* ===================================
+     Client Card
+  =================================== */
+  
+  .client-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 25px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    min-height: 160px;
+  
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+  
+  .client-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.15);
+  }
+  
+  .client-card img {
+    max-width: 100%;
+    max-height: 90px;
+    object-fit: contain;
+  
+    transition: transform 0.3s ease;
+  }
+  
+  .client-card:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* ===================================
+     Tablet
+  =================================== */
+  
+  @media (max-width: 992px) {
+  
+    .clients-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .clients-heading h2 {
+      font-size: 2.2rem;
+    }
+  
+  }
+  
+  /* ===================================
+     Mobile
+  =================================== */
+  
+  @media (max-width: 768px) {
+  
+    .clients-page {
+      padding: 50px 20px 60px;
+    }
+  
+    .clients-heading {
+      margin-bottom: 45px;
+    }
+  
+    .clients-heading h2 {
+      font-size: 1.8rem;
+    }
+  
+    .clients-heading p {
+      font-size: 1rem;
+    }
+  
+    .clients-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  
+    .client-card {
+      min-height: 120px;
+      padding: 18px;
+    }
+  
+    .client-card img {
+      max-height: 65px;
+    }
+  
+  }
