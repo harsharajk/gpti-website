@@ -1,0 +1,170 @@
+/* ===================================
+   Main Page
+=================================== */
+
+.holiday-testing-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 20px 80px;
+  }
+  
+  /* ===================================
+     Page Heading
+  =================================== */
+  
+  .holiday-heading {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .holiday-heading h2 {
+    font-size: 2.8rem;
+    color: #003366;
+    font-weight: 700;
+  }
+  
+  /* ===================================
+     Equipment Images
+  =================================== */
+  
+  .holiday-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  
+  .holiday-image-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+  
+  .holiday-image-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.15);
+  }
+  
+  .holiday-image-card img {
+    width: 100%;
+    max-height: 280px;
+    object-fit: contain;
+  }
+  
+  /* ===================================
+     Introduction
+  =================================== */
+  
+  .holiday-introduction {
+    margin-bottom: 60px;
+  }
+  
+  .holiday-introduction p {
+    color: #555;
+    font-size: 1.08rem;
+    line-height: 1.9;
+    text-align: justify;
+  }
+  
+  /* ===================================
+     Information Sections
+  =================================== */
+  
+  .holiday-section {
+    margin-bottom: 55px;
+  }
+  
+  .holiday-section h3 {
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 25px;
+    font-weight: 700;
+  }
+  
+  .holiday-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .holiday-section li {
+    position: relative;
+    margin-bottom: 18px;
+    padding-left: 34px;
+  
+    font-size: 1.05rem;
+    color: #555;
+    line-height: 1.8;
+  }
+  
+  .holiday-section li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0;
+  
+    color: #ff3b3b;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  /* ===================================
+     Tablet
+  =================================== */
+  
+  @media (max-width: 992px) {
+  
+    .holiday-images {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  
+    .holiday-heading h2 {
+      font-size: 2.3rem;
+    }
+  
+  }
+  
+  /* ===================================
+     Mobile
+  =================================== */
+  
+  @media (max-width: 768px) {
+  
+    .holiday-testing-page {
+      padding: 50px 20px 60px;
+    }
+  
+    .holiday-heading h2 {
+      font-size: 2rem;
+    }
+  
+    .holiday-image-card {
+      padding: 20px;
+    }
+  
+    .holiday-image-card img {
+      max-height: 220px;
+    }
+  
+    .holiday-introduction p {
+      text-align: left;
+      font-size: 1rem;
+    }
+  
+    .holiday-section h3 {
+      font-size: 1.6rem;
+    }
+  
+    .holiday-section li {
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+  
+  }

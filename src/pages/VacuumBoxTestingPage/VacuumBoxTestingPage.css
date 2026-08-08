@@ -1,0 +1,92 @@
+/* ===================================
+   Main Section
+=================================== */
+
+.vacuum-box-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 20px 80px;
+  }
+  
+  /* ===================================
+     Content
+  =================================== */
+  
+  .vacuum-box-content h2 {
+    font-size: 2.8rem;
+    color: #003366;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  /* ===================================
+     Image
+  =================================== */
+  
+  .vacuum-box-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  
+  .vacuum-box-image img {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease;
+  }
+  
+  .vacuum-box-image img:hover {
+    transform: scale(1.02);
+  }
+  
+  /* ===================================
+     Description
+  =================================== */
+  
+  .vacuum-box-content p {
+    font-size: 1.08rem;
+    line-height: 1.9;
+    color: #555;
+    text-align: justify;
+  }
+  
+  /* ===================================
+     Tablet
+  =================================== */
+  
+  @media (max-width: 992px) {
+    .vacuum-box-content h2 {
+      font-size: 2.3rem;
+    }
+  
+    .vacuum-box-image {
+      margin-bottom: 40px;
+    }
+  }
+  
+  /* ===================================
+     Mobile
+  =================================== */
+  
+  @media (max-width: 768px) {
+    .vacuum-box-page {
+      padding: 50px 20px 60px;
+    }
+  
+    .vacuum-box-content h2 {
+      font-size: 2rem;
+      margin-bottom: 35px;
+    }
+  
+    .vacuum-box-image {
+      margin-bottom: 30px;
+    }
+  
+    .vacuum-box-content p {
+      font-size: 1rem;
+      text-align: left;
+    }
+  }

@@ -1,0 +1,119 @@
+/* ===========================
+   Hardness Testing Page
+=========================== */
+
+.hardness-testing-page {
+    background: #fff;
+  }
+  
+  .hardness-testing-content {
+    max-width: 1200px;
+    margin: 70px auto;
+    padding: 0 20px;
+  }
+  
+  .hardness-testing-content h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #003b7a;
+    margin-bottom: 45px;
+  }
+  
+  .hardness-testing-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  
+  .hardness-testing-image img {
+    width: 100%;
+    max-width: 1050px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  }
+  
+  .hardness-testing-content p {
+    font-size: 1.1rem;
+    line-height: 2;
+    color: #444;
+    text-align: justify;
+    margin-bottom: 35px;
+  }
+  
+  .hardness-section {
+    margin-top: 35px;
+  }
+  
+  .hardness-section h3 {
+    font-size: 2rem;
+    color: #003b7a;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .hardness-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .hardness-section li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 16px;
+    font-size: 1.08rem;
+    line-height: 1.8;
+    color: #444;
+  }
+  
+  .hardness-section li::before {
+    content: "■";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #e63946;
+    font-size: 0.8rem;
+  }
+  
+  /* ===========================
+     Responsive
+  =========================== */
+  
+  @media (max-width: 992px) {
+    .hardness-testing-content h2 {
+      font-size: 2.4rem;
+    }
+  
+    .hardness-testing-content p {
+      font-size: 1rem;
+    }
+  
+    .hardness-section h3 {
+      font-size: 1.6rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hardness-testing-content {
+      margin: 50px auto;
+    }
+  
+    .hardness-testing-content h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+  
+    .hardness-testing-image img {
+      border-radius: 8px;
+    }
+  
+    .hardness-testing-content p {
+      text-align: left;
+      line-height: 1.8;
+    }
+  
+    .hardness-section li {
+      font-size: 1rem;
+    }
+  }

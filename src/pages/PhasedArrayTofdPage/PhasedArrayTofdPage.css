@@ -1,0 +1,273 @@
+/* ==========================================
+   Phased Array / TOFD Page
+========================================== */
+
+.phased-array-page {
+    background: #fff;
+    padding: 70px 0;
+  }
+  
+  .phased-array-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* ==========================================
+     Page Title
+  ========================================== */
+  
+  .phased-array-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #003b7a;
+    margin-bottom: 50px;
+  }
+  
+  /* ==========================================
+     Introduction Section
+  ========================================== */
+  
+  .phased-array-intro {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 70px;
+  }
+  
+  .phased-array-text p {
+    font-size: 1.08rem;
+    line-height: 2;
+    color: #444;
+    text-align: justify;
+  }
+  
+  .phased-array-image img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  }
+  
+  /* ==========================================
+     Common Sections
+  ========================================== */
+  
+  .phased-array-section {
+    margin-top: 60px;
+  }
+  
+  .phased-array-section h2,
+  .tofd-section h2 {
+    font-size: 2rem;
+    color: #003b7a;
+    margin-bottom: 25px;
+    font-weight: 700;
+  }
+  
+  /* ==========================================
+     Applications
+  ========================================== */
+  
+  .applications-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+  
+  .application-column h3 {
+    color: #222;
+    font-size: 1.35rem;
+    margin-bottom: 20px;
+  }
+  
+  .application-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .application-column li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 12px;
+    color: #444;
+    line-height: 1.8;
+  }
+  
+  .application-column li::before {
+    content: "■";
+    color: #e63946;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 0.8rem;
+  }
+  
+  /* ==========================================
+     Comparison Table
+  ========================================== */
+  
+  .comparison-table-wrapper {
+    overflow-x: auto;
+    margin-top: 30px;
+  }
+  
+  .comparison-table {
+    width: 100%;
+    min-width: 900px;
+    border-collapse: collapse;
+  }
+  
+  .comparison-table th {
+    background: #003b7a;
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .comparison-table td {
+    padding: 18px;
+    border: 1px solid #ddd;
+    color: #444;
+    line-height: 1.7;
+    vertical-align: top;
+    text-align: left;
+  }
+  
+  .comparison-table tbody tr:nth-child(even) {
+    background: #f8f8f8;
+  }
+  
+  .comparison-table th:first-child,
+  .comparison-table td:first-child {
+    width: 70px;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  /* ==========================================
+     TOFD Section
+  ========================================== */
+  
+  .tofd-section {
+    margin-top: 70px;
+    margin-bottom: 60px;
+  }
+  
+  .tofd-content {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 50px;
+    align-items: center;
+  }
+  
+  .tofd-text p {
+    font-size: 1.08rem;
+    color: #444;
+    line-height: 2;
+    text-align: justify;
+  }
+  
+  .tofd-image img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  }
+  
+  /* ==========================================
+     Bottom Lists
+  ========================================== */
+  
+  .tofd-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    margin-top: 50px;
+  }
+  
+  .tofd-column h3 {
+    color: #003b7a;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+  
+  .tofd-column ul,
+  .advantages-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .tofd-column li,
+  .advantages-list li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 12px;
+    color: #444;
+    line-height: 1.8;
+  }
+  
+  .tofd-column li::before,
+  .advantages-list li::before {
+    content: "■";
+    color: #e63946;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 0.8rem;
+  }
+  
+  /* ==========================================
+     Responsive
+  ========================================== */
+  
+  @media (max-width: 992px) {
+  
+    .phased-array-title {
+      font-size: 2.5rem;
+    }
+  
+    .phased-array-intro,
+    .applications-grid,
+    .tofd-content,
+    .tofd-bottom {
+      grid-template-columns: 1fr;
+    }
+  
+  }
+  
+  @media (max-width: 768px) {
+  
+    .phased-array-page {
+      padding: 50px 0;
+    }
+  
+    .phased-array-title {
+      font-size: 2rem;
+      margin-bottom: 35px;
+    }
+  
+    .phased-array-text p,
+    .tofd-text p {
+      text-align: left;
+      font-size: 1rem;
+    }
+  
+    .phased-array-section h2,
+    .tofd-section h2 {
+      font-size: 1.6rem;
+    }
+  
+    .application-column h3,
+    .tofd-column h3 {
+      font-size: 1.2rem;
+    }
+  
+  }

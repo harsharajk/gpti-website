@@ -26,6 +26,11 @@ import QHSEPolicyPage from "./pages/QHSEPolicyPage/QHSEPolicyPage";
 import ECataloguePage from "./pages/ECataloguePage/ECataloguePage";
 import CertificatesPage from "./pages/CertificatesPage/CertificatesPage";
 import ClientsUAEPage from "./pages/ClientsUAEPage/ClientsUAEPage";
+import ClientsIndiaPage from "./pages/ClientsIndiaPage/ClientsIndiaPage";
+import HolidayTestingPage from "./pages/HolidayTestingPage/HolidayTestingPage";
+import VacuumBoxTestingPage from "./pages/VacuumBoxTestingPage/VacuumBoxTestingPage";
+import HardnessTestingPage from "./pages/HardnessTestingPage/HardnessTestingPage";
+import PhasedArrayTofdPage from "./pages/PhasedArrayTofdPage/PhasedArrayTofdPage";
 
 function App() {
   return (
@@ -85,6 +90,26 @@ function App() {
         />
 
         <Route
+           path="/services/holiday-testing"
+            element={<HolidayTestingPage />}
+        />
+
+        <Route
+          path="/services/vacuum-box-testing"
+          element={<VacuumBoxTestingPage />}
+        />
+
+        <Route
+          path="/services/hardness-testing"
+          element={<HardnessTestingPage />}
+        />
+
+        <Route
+          path="/services/phased-array-tofd"
+          element={<PhasedArrayTofdPage />}
+        />
+
+        <Route
           path="/quality-policy"
           element={<QualityPolicyPage />}
         />
@@ -97,6 +122,11 @@ function App() {
         <Route
           path="/clients/uae"
           element={<ClientsUAEPage />}
+        />
+
+        <Route
+          path="/clients/india"
+          element={<ClientsIndiaPage />}
         />
 
         <Route
