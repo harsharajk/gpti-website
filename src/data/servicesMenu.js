@@ -61,9 +61,9 @@ const servicesMenu = [
           children: [],
         },
         {
-          id: "boroscopic-inspection",
-          title: "Boroscopic Inspection",
-          path: "/services/boroscopic-inspection",
+          id: "borescopic-inspection",
+          title: "Borescopic Inspection",
+          path: "/services/borescopic-inspection",
           children: [],
         },
         {

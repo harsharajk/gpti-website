@@ -91,11 +91,11 @@ const servicesData = [
 
     {
         id: 8,
-        title: "Boroscopic Inspection",
+        title: "Borescopic Inspection",
         image: boroscopicInspection,
         description:
             "An all-in-one system that includes everything necessary for complex inspection tasks. All functions can be controlled from a single handheld remote control unit.",
-        path: "/services/boroscopic-inspection",
+        path: "/services/borescopic-inspection",
     },
 
     {

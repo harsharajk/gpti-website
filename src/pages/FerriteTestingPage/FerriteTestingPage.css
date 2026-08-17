@@ -1,0 +1,180 @@
+/* ==========================================
+   Ferrite Testing Page
+========================================== */
+
+.ferrite-page {
+    background: #ffffff;
+    padding: 70px 0 80px;
+  }
+  
+  .ferrite-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* ==========================================
+     Rectangular Image
+  ========================================== */
+  
+  .ferrite-image {
+    width: 100%;
+    margin-bottom: 55px;
+  }
+  
+  .ferrite-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  }
+  
+  /* ==========================================
+     Introduction
+  ========================================== */
+  
+  .ferrite-introduction {
+    margin-bottom: 60px;
+  }
+  
+  .ferrite-introduction h2 {
+    text-align: center;
+    font-size: 2.7rem;
+    font-weight: 700;
+    color: #003b7a;
+    margin-bottom: 30px;
+  }
+  
+  .ferrite-introduction p {
+    font-size: 1.08rem;
+    line-height: 2;
+    color: #444;
+    text-align: justify;
+    margin: 0;
+  }
+  
+  /* ==========================================
+     Information Sections
+  ========================================== */
+  
+  .ferrite-sections {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    margin-top: 50px;
+  }
+  
+  .ferrite-section h3 {
+    font-size: 1.45rem;
+    line-height: 1.5;
+    color: #003b7a;
+    font-weight: 700;
+    margin-bottom: 22px;
+  }
+  
+  .ferrite-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .ferrite-section li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 14px;
+    font-size: 1.06rem;
+    line-height: 1.8;
+    color: #444;
+  }
+  
+  .ferrite-section li::before {
+    content: "■";
+    position: absolute;
+    left: 0;
+    top: 1px;
+    color: #e63946;
+    font-size: 0.75rem;
+  }
+  
+  /* ==========================================
+     Tablet
+  ========================================== */
+  
+  @media (max-width: 992px) {
+  
+    .ferrite-page {
+      padding: 55px 0 70px;
+    }
+  
+    .ferrite-introduction h2 {
+      font-size: 2.3rem;
+    }
+  
+    .ferrite-sections {
+      gap: 35px;
+    }
+  
+    .ferrite-introduction p {
+      font-size: 1rem;
+    }
+  
+    .ferrite-section h3 {
+      font-size: 1.3rem;
+    }
+  
+  }
+  
+  /* ==========================================
+     Mobile
+  ========================================== */
+  
+  @media (max-width: 768px) {
+  
+    .ferrite-page {
+      padding: 45px 0 60px;
+    }
+  
+    .ferrite-container {
+      padding: 0 20px;
+    }
+  
+    .ferrite-image {
+      margin-bottom: 40px;
+    }
+  
+    .ferrite-image img {
+      border-radius: 10px;
+    }
+  
+    .ferrite-introduction {
+      margin-bottom: 45px;
+    }
+  
+    .ferrite-introduction h2 {
+      font-size: 2rem;
+      margin-bottom: 25px;
+    }
+  
+    .ferrite-introduction p {
+      font-size: 1rem;
+      line-height: 1.8;
+      text-align: left;
+    }
+  
+    .ferrite-sections {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      margin-top: 35px;
+    }
+  
+    .ferrite-section h3 {
+      font-size: 1.25rem;
+    }
+  
+    .ferrite-section li {
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+  
+  }

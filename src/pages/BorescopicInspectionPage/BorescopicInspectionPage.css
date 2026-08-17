@@ -1,0 +1,284 @@
+/* ==========================================
+   Borescopic Inspection Page
+========================================== */
+
+.borescopic-page {
+    background: #ffffff;
+    padding: 70px 0 80px;
+  }
+  
+  .borescopic-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* ==========================================
+     Main Rectangular Image
+  ========================================== */
+  
+  .borescopic-banner-image {
+    width: 100%;
+    margin-bottom: 55px;
+  }
+  
+  .borescopic-banner-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  }
+  
+  /* ==========================================
+     Page Title
+  ========================================== */
+  
+  .borescopic-title {
+    text-align: center;
+    font-size: 2.7rem;
+    font-weight: 700;
+    color: #003b7a;
+    margin-bottom: 35px;
+  }
+  
+  /* ==========================================
+     Introduction
+  ========================================== */
+  
+  .borescopic-introduction {
+    margin-bottom: 40px;
+  }
+  
+  .borescopic-introduction p,
+  .borescopic-description p {
+    font-size: 1.08rem;
+    line-height: 2;
+    color: #444;
+    text-align: justify;
+    margin-bottom: 24px;
+  }
+  
+  /* ==========================================
+     Equipment Description
+  ========================================== */
+  
+  .borescopic-description {
+    margin-bottom: 65px;
+  }
+  
+  /* ==========================================
+     Capabilities + Image
+  ========================================== */
+  
+  .borescopic-capabilities-section {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 50px;
+    align-items: start;
+    margin-bottom: 70px;
+  }
+  
+  .borescopic-capabilities-text h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #003b7a;
+    margin-bottom: 22px;
+  }
+  
+  .capabilities-intro {
+    font-size: 1.06rem;
+    line-height: 1.9;
+    color: #444;
+    margin-bottom: 25px;
+  }
+  
+  .borescopic-capabilities-text ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px;
+  }
+  
+  .borescopic-capabilities-text li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 14px;
+    font-size: 1.06rem;
+    line-height: 1.8;
+    color: #444;
+  }
+  
+  .borescopic-capabilities-text li::before {
+    content: "■";
+    position: absolute;
+    left: 0;
+    top: 1px;
+    color: #e63946;
+    font-size: 0.75rem;
+  }
+  
+  .additional-description {
+    font-size: 1.06rem;
+    line-height: 1.9;
+    color: #444;
+  }
+  
+  /* ==========================================
+     Square Equipment Image
+  ========================================== */
+  
+  .borescopic-equipment-image {
+    width: 100%;
+  }
+  
+  .borescopic-equipment-image img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  }
+  
+  /* ==========================================
+     Applications & Advantages
+  ========================================== */
+  
+  .borescopic-bottom-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+  
+  .borescopic-bottom-column h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #003b7a;
+    margin-bottom: 22px;
+  }
+  
+  .borescopic-bottom-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .borescopic-bottom-column li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 14px;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #444;
+  }
+  
+  .borescopic-bottom-column li::before {
+    content: "■";
+    position: absolute;
+    left: 0;
+    top: 1px;
+    color: #e63946;
+    font-size: 0.75rem;
+  }
+  
+  /* ==========================================
+     Tablet
+  ========================================== */
+  
+  @media (max-width: 992px) {
+  
+    .borescopic-page {
+      padding: 55px 0 70px;
+    }
+  
+    .borescopic-title {
+      font-size: 2.3rem;
+    }
+  
+    .borescopic-capabilities-section {
+      grid-template-columns: 1fr 320px;
+      gap: 35px;
+    }
+  
+    .borescopic-introduction p,
+    .borescopic-description p {
+      font-size: 1rem;
+    }
+  
+    .borescopic-capabilities-text h3 {
+      font-size: 1.7rem;
+    }
+  
+  }
+  
+  /* ==========================================
+     Mobile
+  ========================================== */
+  
+  @media (max-width: 768px) {
+  
+    .borescopic-page {
+      padding: 45px 0 60px;
+    }
+  
+    .borescopic-content {
+      padding: 0 20px;
+    }
+  
+    .borescopic-banner-image {
+      margin-bottom: 40px;
+    }
+  
+    .borescopic-banner-image img {
+      border-radius: 10px;
+    }
+  
+    .borescopic-title {
+      font-size: 2rem;
+      margin-bottom: 25px;
+    }
+  
+    .borescopic-introduction p,
+    .borescopic-description p {
+      font-size: 1rem;
+      line-height: 1.8;
+      text-align: left;
+    }
+  
+    .borescopic-description {
+      margin-bottom: 45px;
+    }
+  
+    .borescopic-capabilities-section {
+      grid-template-columns: 1fr;
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+  
+    .borescopic-capabilities-text h3 {
+      font-size: 1.7rem;
+    }
+  
+    .borescopic-capabilities-text li {
+      font-size: 1rem;
+    }
+  
+    .borescopic-equipment-image {
+      max-width: 420px;
+      margin: 0 auto;
+    }
+  
+    .borescopic-bottom-grid {
+      grid-template-columns: 1fr;
+      gap: 45px;
+    }
+  
+    .borescopic-bottom-column h3 {
+      font-size: 1.5rem;
+    }
+  
+    .borescopic-bottom-column li {
+      font-size: 1rem;
+    }
+  
+  }

@@ -31,6 +31,10 @@ import HolidayTestingPage from "./pages/HolidayTestingPage/HolidayTestingPage";
 import VacuumBoxTestingPage from "./pages/VacuumBoxTestingPage/VacuumBoxTestingPage";
 import HardnessTestingPage from "./pages/HardnessTestingPage/HardnessTestingPage";
 import PhasedArrayTofdPage from "./pages/PhasedArrayTofdPage/PhasedArrayTofdPage";
+import PositiveMaterialIdentificationPage from "./pages/PositiveMaterialIdentificationPage/PositiveMaterialIdentificationPage";
+import BorescopicInspectionPage from "./pages/BorescopicInspectionPage/BorescopicInspectionPage";
+import FerriteTestingPage from "./pages/FerriteTestingPage/FerriteTestingPage";
+
 
 function App() {
   return (
@@ -108,6 +112,21 @@ function App() {
           path="/services/phased-array-tofd"
           element={<PhasedArrayTofdPage />}
         />
+
+        <Route
+        path="/services/positive-material-identification"
+        element={<PositiveMaterialIdentificationPage />}
+        />
+
+      <Route
+       path="/services/borescopic-inspection"
+        element={<BorescopicInspectionPage />}
+      />
+
+      <Route
+       path="/services/ferrite-testing"
+        element={<FerriteTestingPage />}
+      />
 
         <Route
           path="/quality-policy"

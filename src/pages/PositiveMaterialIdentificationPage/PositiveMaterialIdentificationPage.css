@@ -1,0 +1,220 @@
+/* ==========================================
+   Positive Material Identification Page
+========================================== */
+
+.pmi-page {
+    background: #ffffff;
+    padding: 70px 0 80px;
+  }
+  
+  .pmi-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* ==========================================
+     Wide PMI Image
+  ========================================== */
+  
+  .pmi-wide-image {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  
+  .pmi-wide-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  }
+  
+  /* ==========================================
+     Introduction
+  ========================================== */
+  
+  .pmi-introduction {
+    margin-bottom: 65px;
+  }
+  
+  .pmi-introduction h2 {
+    text-align: center;
+    font-size: 2.7rem;
+    font-weight: 700;
+    color: #003b7a;
+    margin-bottom: 35px;
+  }
+  
+  .pmi-introduction p {
+    font-size: 1.08rem;
+    line-height: 2;
+    color: #444;
+    text-align: justify;
+    margin-bottom: 22px;
+  }
+  
+  /* ==========================================
+     Advantages
+  ========================================== */
+  
+  .pmi-advantages {
+    margin-top: 60px;
+  }
+  
+  .pmi-advantages h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #003b7a;
+    margin-bottom: 30px;
+  }
+  
+  .pmi-advantages-content {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 50px;
+    align-items: start;
+  }
+  
+  /* Advantages Text */
+  
+  .pmi-advantages-text p {
+    position: relative;
+    padding-left: 28px;
+    margin: 0 0 18px;
+    font-size: 1.06rem;
+    line-height: 1.9;
+    color: #444;
+  }
+  
+  .pmi-advantages-text p::before {
+    content: "■";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: #e63946;
+    font-size: 0.75rem;
+  }
+  
+  /* PMI Machine Image */
+  
+  .pmi-machine-image {
+    width: 100%;
+  }
+  
+  .pmi-machine-image img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  }
+  
+  /* ==========================================
+     OES Description
+  ========================================== */
+  
+  .pmi-oes {
+    margin-top: 45px;
+  }
+  
+  .pmi-oes p {
+    font-size: 1.08rem;
+    line-height: 2;
+    color: #444;
+    text-align: justify;
+  }
+  
+  /* ==========================================
+     Responsive - Tablet
+  ========================================== */
+  
+  @media (max-width: 992px) {
+  
+    .pmi-page {
+      padding: 55px 0 70px;
+    }
+  
+    .pmi-introduction h2 {
+      font-size: 2.3rem;
+    }
+  
+    .pmi-advantages-content {
+      grid-template-columns: 1fr 320px;
+      gap: 35px;
+    }
+  
+    .pmi-introduction p,
+    .pmi-oes p {
+      font-size: 1rem;
+    }
+  
+  }
+  
+  /* ==========================================
+     Responsive - Mobile
+  ========================================== */
+  
+  @media (max-width: 768px) {
+  
+    .pmi-page {
+      padding: 45px 0 60px;
+    }
+  
+    .pmi-container {
+      padding: 0 20px;
+    }
+  
+    .pmi-wide-image {
+      margin-bottom: 40px;
+    }
+  
+    .pmi-wide-image img {
+      border-radius: 10px;
+    }
+  
+    .pmi-introduction {
+      margin-bottom: 45px;
+    }
+  
+    .pmi-introduction h2 {
+      font-size: 2rem;
+      margin-bottom: 25px;
+    }
+  
+    .pmi-introduction p,
+    .pmi-oes p {
+      font-size: 1rem;
+      line-height: 1.8;
+      text-align: left;
+    }
+  
+    .pmi-advantages {
+      margin-top: 45px;
+    }
+  
+    .pmi-advantages h2 {
+      font-size: 1.7rem;
+    }
+  
+    .pmi-advantages-content {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  
+    .pmi-machine-image {
+      max-width: 420px;
+      margin: 0 auto;
+    }
+  
+    .pmi-advantages-text p {
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+  
+    .pmi-oes {
+      margin-top: 35px;
+    }
+  
+  }

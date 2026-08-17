@@ -100,8 +100,8 @@ const footerData = {
             path: "/services/phased-array-tofd",
         },
         {
-            title: "Boroscopic Inspection",
-            path: "/services/boroscopic-inspection",
+            title: "Borescopic Inspection",
+            path: "/services/borescopic-inspection",
         },
         {
             title: "Positive Material Identification",
