@@ -1,0 +1,259 @@
+/* ==========================================
+   Tube Inspection Page
+========================================== */
+
+.tube-inspection-page {
+    background: #ffffff;
+  }
+  
+  /* ==========================================
+     Main Section
+  ========================================== */
+  
+  .tube-section {
+    padding: 75px 0;
+    border-bottom: 1px solid #eeeeee;
+  }
+  
+  .tube-section:last-child {
+    border-bottom: none;
+  }
+  
+  .tube-section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  
+    display: grid;
+    grid-template-columns: 1fr 430px;
+    gap: 60px;
+    align-items: start;
+  }
+  
+  /* ==========================================
+     Image Position
+  ========================================== */
+  
+  .tube-section-left .tube-section-container {
+    grid-template-columns: 430px 1fr;
+  }
+  
+  .tube-section-left .tube-section-content {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  
+  .tube-section-left .tube-section-images {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  /* ==========================================
+     Section Heading
+  ========================================== */
+  
+  .tube-section-content h2 {
+    margin: 0 0 28px;
+  
+    color: #003b7a;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.35;
+  }
+  
+  /* ==========================================
+     Description
+  ========================================== */
+  
+  .tube-description,
+  .tube-subsection p {
+    margin: 0 0 25px;
+  
+    color: #444444;
+    font-size: 1.06rem;
+    line-height: 1.9;
+    text-align: justify;
+  }
+  
+  /* ==========================================
+     Subsections
+  ========================================== */
+  
+  .tube-subsection {
+    margin-top: 35px;
+  }
+  
+  .tube-subsection h3 {
+    margin: 0 0 20px;
+  
+    color: #003b7a;
+    font-size: 1.45rem;
+    font-weight: 700;
+    line-height: 1.45;
+  }
+  
+  .tube-subsection ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .tube-subsection li {
+    position: relative;
+  
+    margin-bottom: 13px;
+    padding-left: 28px;
+  
+    color: #444444;
+    font-size: 1.04rem;
+    line-height: 1.8;
+  }
+  
+  .tube-subsection li::before {
+    content: "■";
+  
+    position: absolute;
+    left: 0;
+    top: 1px;
+  
+    color: #e63946;
+    font-size: 0.75rem;
+  }
+  
+  /* ==========================================
+     Images
+  ========================================== */
+  
+  .tube-section-images {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .tube-section-images img {
+    width: 100%;
+    height: auto;
+  
+    display: block;
+  
+    border-radius: 12px;
+  
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  }
+  
+  /* ==========================================
+     Eddy Current Images
+  ========================================== */
+  
+  .tube-section-eddy-current .tube-section-images img {
+    max-height: 280px;
+    object-fit: contain;
+  }
+  
+  /* ==========================================
+     RFET / IRIS / MFL Images
+  ========================================== */
+  
+  .tube-section-rfet .tube-section-images img,
+  .tube-section-iris .tube-section-images img,
+  .tube-section-mfl .tube-section-images img {
+    max-height: 430px;
+    object-fit: contain;
+  }
+  
+  /* ==========================================
+     First Section
+  ========================================== */
+  
+  .tube-section-eddy-current {
+    padding-top: 70px;
+  }
+  
+  /* ==========================================
+     Tablet
+  ========================================== */
+  
+  @media (max-width: 992px) {
+  
+    .tube-section {
+      padding: 60px 0;
+    }
+  
+    .tube-section-container,
+    .tube-section-left .tube-section-container {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+  
+    .tube-section-left .tube-section-content,
+    .tube-section-left .tube-section-images {
+      grid-column: auto;
+      grid-row: auto;
+    }
+  
+    .tube-section-content h2 {
+      font-size: 1.8rem;
+    }
+  
+    .tube-description,
+    .tube-subsection p {
+      font-size: 1rem;
+    }
+  
+    .tube-section-images {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  
+  }
+  
+  /* ==========================================
+     Mobile
+  ========================================== */
+  
+  @media (max-width: 768px) {
+  
+    .tube-section {
+      padding: 50px 0;
+    }
+  
+    .tube-section-container,
+    .tube-section-left .tube-section-container {
+      padding: 0 20px;
+      gap: 30px;
+    }
+  
+    .tube-section-content h2 {
+      font-size: 1.55rem;
+      margin-bottom: 22px;
+    }
+  
+    .tube-description,
+    .tube-subsection p {
+      font-size: 1rem;
+      line-height: 1.8;
+      text-align: left;
+    }
+  
+    .tube-subsection {
+      margin-top: 30px;
+    }
+  
+    .tube-subsection h3 {
+      font-size: 1.3rem;
+    }
+  
+    .tube-subsection li {
+      font-size: 0.98rem;
+      line-height: 1.75;
+    }
+  
+    .tube-section-images {
+      width: 100%;
+    }
+  
+    .tube-section-images img {
+      border-radius: 10px;
+    }
+  
+  }

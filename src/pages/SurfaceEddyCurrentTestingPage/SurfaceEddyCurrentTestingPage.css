@@ -1,0 +1,146 @@
+.surface-eddy-page {
+    padding: 75px 0;
+    background: #ffffff;
+  }
+  
+  .surface-eddy-container {
+    width: 92%;
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+  
+  .surface-eddy-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    align-items: start;
+  }
+  
+  /* =========================
+     LEFT SIDE
+  ========================= */
+  
+  .surface-eddy-text h2 {
+    margin: 0 0 18px;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #050505;
+  }
+  
+  .surface-eddy-text p {
+    margin: 0 0 18px;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #123f73;
+    text-align: justify;
+  }
+  
+  .surface-eddy-text h3 {
+    margin: 8px 0 18px;
+    font-size: 22px;
+    font-weight: 400;
+    color: #222222;
+  }
+  
+  .surface-eddy-text ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .surface-eddy-text li {
+    position: relative;
+    margin-bottom: 14px;
+    padding-left: 18px;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #123f73;
+  }
+  
+  .surface-eddy-text li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 6px;
+    height: 6px;
+    background: #ff1f3d;
+  }
+  
+  
+  /* =========================
+     RIGHT SIDE IMAGES
+  ========================= */
+  
+  .surface-eddy-images {
+    width: 100%;
+  }
+  
+  .surface-eddy-top-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .surface-eddy-top-images img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .surface-eddy-bottom-image {
+    width: 100%;
+  }
+  
+  .surface-eddy-bottom-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+  }
+  
+  
+  /* =========================
+     RESPONSIVE
+  ========================= */
+  
+  @media (max-width: 900px) {
+    .surface-eddy-content {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+  
+    .surface-eddy-text h2 {
+      font-size: 30px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .surface-eddy-page {
+      padding: 50px 0;
+    }
+  
+    .surface-eddy-container {
+      width: 90%;
+    }
+  
+    .surface-eddy-top-images {
+      grid-template-columns: 1fr;
+    }
+  
+    .surface-eddy-top-images img {
+      height: auto;
+    }
+  
+    .surface-eddy-text h2 {
+      font-size: 26px;
+    }
+  
+    .surface-eddy-text p,
+    .surface-eddy-text li {
+      font-size: 14px;
+    }
+  }

@@ -1,0 +1,174 @@
+/* ==========================================
+   Long Range Ultrasonic Testing Page
+========================================== */
+
+.long-range-page {
+    background: #ffffff;
+  }
+  
+  .long-range-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 75px 20px;
+  
+    display: grid;
+    grid-template-columns: 1fr 610px;
+    gap: 55px;
+    align-items: start;
+  }
+  
+  /* ==========================================
+     Left Side Content
+  ========================================== */
+  
+  .long-range-text h1 {
+    margin: 0 0 28px;
+  
+    color: #050505;
+    font-size: 2.1rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+  
+  .long-range-text p {
+    margin: 0 0 15px;
+  
+    color: #003b7a;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    text-align: justify;
+  }
+  
+  .long-range-text h2 {
+    margin: 8px 0 15px;
+  
+    color: #003b7a;
+    font-size: 1.35rem;
+    font-weight: 400;
+  }
+  
+  .long-range-text ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .long-range-text li {
+    position: relative;
+  
+    margin-bottom: 10px;
+    padding-left: 18px;
+  
+    color: #003b7a;
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+  
+  .long-range-text li::before {
+    content: "■";
+  
+    position: absolute;
+    left: 0;
+    top: 0;
+  
+    color: #ff1f3d;
+    font-size: 0.65rem;
+  }
+  
+  /* ==========================================
+     Right Side Images
+  ========================================== */
+  
+  .long-range-images {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .long-range-images img {
+    width: 100%;
+    height: auto;
+  
+    display: block;
+  
+    object-fit: cover;
+  }
+  
+  /* ==========================================
+     Desktop Image Sizing
+  ========================================== */
+  
+  .long-range-images img:first-child {
+    max-height: 450px;
+  }
+  
+  .long-range-images img:last-child {
+    max-height: 450px;
+  }
+  
+  /* ==========================================
+     Tablet
+  ========================================== */
+  
+  @media (max-width: 1100px) {
+  
+    .long-range-content {
+      grid-template-columns: 1fr 500px;
+      gap: 40px;
+    }
+  
+  }
+  
+  /* ==========================================
+     Tablet / Small Screens
+  ========================================== */
+  
+  @media (max-width: 900px) {
+  
+    .long-range-content {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      padding: 60px 25px;
+    }
+  
+    .long-range-images {
+      max-width: 650px;
+      margin: 0 auto;
+    }
+  
+  }
+  
+  /* ==========================================
+     Mobile
+  ========================================== */
+  
+  @media (max-width: 600px) {
+  
+    .long-range-content {
+      padding: 45px 20px;
+    }
+  
+    .long-range-text h1 {
+      font-size: 1.7rem;
+    }
+  
+    .long-range-text p {
+      font-size: 1rem;
+      line-height: 1.75;
+      text-align: left;
+    }
+  
+    .long-range-text h2 {
+      font-size: 1.25rem;
+    }
+  
+    .long-range-text li {
+      font-size: 0.95rem;
+    }
+  
+    .long-range-images {
+      gap: 18px;
+    }
+  
+  }

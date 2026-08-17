@@ -34,6 +34,10 @@ import PhasedArrayTofdPage from "./pages/PhasedArrayTofdPage/PhasedArrayTofdPage
 import PositiveMaterialIdentificationPage from "./pages/PositiveMaterialIdentificationPage/PositiveMaterialIdentificationPage";
 import BorescopicInspectionPage from "./pages/BorescopicInspectionPage/BorescopicInspectionPage";
 import FerriteTestingPage from "./pages/FerriteTestingPage/FerriteTestingPage";
+import RTFilmDigitizationPage from "./pages/RTFilmDigitizationPage/RTFilmDigitizationPage";
+import TubeInspectionPage from "./pages/TubeInspectionPage/TubeInspectionPage";
+import LongRangeUltrasonicTestingPage from "./pages/LongRangeUltrasonicTestingPage/LongRangeUltrasonicTestingPage";
+import SurfaceEddyCurrentTestingPage from "./pages/SurfaceEddyCurrentTestingPage/SurfaceEddyCurrentTestingPage";
 
 
 function App() {
@@ -128,7 +132,27 @@ function App() {
         element={<FerriteTestingPage />}
       />
 
-        <Route
+      <Route
+        path="/services/rt-film-digitization"
+        element={<RTFilmDigitizationPage />}
+      />
+
+      <Route
+        path="/services/tube-inspection"
+        element={<TubeInspectionPage />}
+      />
+
+      <Route
+        path="/services/long-range-ultrasonic-testing"
+        element={<LongRangeUltrasonicTestingPage />}
+      />
+
+      <Route
+        path="/services/surface-eddy-current-testing"
+        element={<SurfaceEddyCurrentTestingPage />}
+      />
+
+              <Route
           path="/quality-policy"
           element={<QualityPolicyPage />}
         />
