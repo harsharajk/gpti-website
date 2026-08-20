@@ -38,6 +38,11 @@ import RTFilmDigitizationPage from "./pages/RTFilmDigitizationPage/RTFilmDigitiz
 import TubeInspectionPage from "./pages/TubeInspectionPage/TubeInspectionPage";
 import LongRangeUltrasonicTestingPage from "./pages/LongRangeUltrasonicTestingPage/LongRangeUltrasonicTestingPage";
 import SurfaceEddyCurrentTestingPage from "./pages/SurfaceEddyCurrentTestingPage/SurfaceEddyCurrentTestingPage";
+import WeldingInspectionPage from "./pages/WeldingInspectionPage/WeldingInspectionPage";
+import CivilInspectionPage from "./pages/CivilInspectionPage/CivilInspectionPage";
+import PaintingCoatingInspectionPage from "./pages/PaintingCoatingInspectionPage/PaintingCoatingInspectionPage";
+import EIQCHSEOfficerPage from "./pages/EIQCHSEOfficerPage/EIQCHSEOfficerPage";
+import ThirdPartyVendorInspectionPage from "./pages/ThirdPartyVendorInspectionPage/ThirdPartyVendorInspectionPage";
 
 
 function App() {
@@ -152,7 +157,33 @@ function App() {
         element={<SurfaceEddyCurrentTestingPage />}
       />
 
-              <Route
+      <Route
+         path="/services/welding-inspection"
+         element={<WeldingInspectionPage />}
+      />
+
+      <Route
+         path="/services/civil-inspection"
+          element={<CivilInspectionPage />}
+      />
+
+        <Route
+        path="/services/painting-coating-inspection"
+        element={<PaintingCoatingInspectionPage />}
+        />
+
+      <Route
+        path="/services/ei-qc-hse-officer"
+        element={<EIQCHSEOfficerPage />}
+      />
+
+      <Route
+        path="/services/third-party-vendor-inspection"
+        element={<ThirdPartyVendorInspectionPage />}
+      />
+
+      
+       <Route
           path="/quality-policy"
           element={<QualityPolicyPage />}
         />

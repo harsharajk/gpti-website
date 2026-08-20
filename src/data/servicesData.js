@@ -167,7 +167,7 @@ const servicesData = [
         image: eIIqcHseOfficer,
         description:
             "GPTI Inspectors assigned to carry out inspection shall be certified as a minimum to CompEx Certification when required by the contract document with relevant experience.",
-        path: "/services/e-i-iqc-hse-officer",
+        path: "/services/ei-qc-hse-officer",
     },
 
     {

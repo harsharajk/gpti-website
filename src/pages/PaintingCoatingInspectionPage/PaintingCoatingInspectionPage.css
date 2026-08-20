@@ -1,0 +1,140 @@
+.painting-coating-page {
+    width: 100%;
+    background: #ffffff;
+}
+
+.painting-coating-content {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 80px 0 70px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+    align-items: start;
+}
+
+/* Left Side */
+
+.painting-coating-text {
+    padding-right: 10px;
+}
+
+.painting-coating-text h1 {
+    margin: 0 0 12px;
+
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 700;
+
+    color: #000000;
+}
+
+.painting-coating-text p {
+    margin: 0;
+
+    font-size: 15px;
+    line-height: 1.6;
+
+    color: #173b63;
+    text-align: justify;
+}
+
+.painting-coating-text h2 {
+    margin: 28px 0 12px;
+
+    font-size: 20px;
+    line-height: 1.3;
+    font-weight: 400;
+
+    color: #222222;
+}
+
+.painting-coating-text ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.painting-coating-text li {
+    position: relative;
+
+    margin-bottom: 10px;
+    padding-left: 19px;
+
+    font-size: 15px;
+    line-height: 1.5;
+
+    color: #173b63;
+}
+
+.painting-coating-text li::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 8px;
+
+    width: 6px;
+    height: 6px;
+
+    background: #ff1f35;
+}
+
+
+/* Right Side - Images */
+
+.painting-coating-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.painting-coating-images img {
+    width: 100%;
+    height: 300px;
+
+    object-fit: cover;
+    display: block;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    .painting-coating-content {
+        grid-template-columns: 1fr;
+        padding: 60px 25px;
+    }
+
+    .painting-coating-text {
+        padding-right: 0;
+    }
+
+    .painting-coating-images {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .painting-coating-content {
+        padding: 45px 20px;
+    }
+
+    .painting-coating-text h1 {
+        font-size: 28px;
+    }
+
+    .painting-coating-images {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .painting-coating-images img {
+        height: auto;
+    }
+}

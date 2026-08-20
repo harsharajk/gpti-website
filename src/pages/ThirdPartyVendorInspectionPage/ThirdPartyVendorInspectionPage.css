@@ -1,0 +1,207 @@
+/* ==========================================
+   Third Party Inspection / Vendor Inspection
+========================================== */
+
+.third-party-vendor-inspection-page {
+    background: #ffffff;
+}
+
+.third-party-vendor-inspection-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 20px 80px;
+}
+
+
+/* ==========================================
+   Rectangular Image
+========================================== */
+
+.third-party-vendor-inspection-image {
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+.third-party-vendor-inspection-image img {
+    width: 100%;
+    max-height: 430px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ==========================================
+   Main Explanation
+========================================== */
+
+.third-party-vendor-inspection-text {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.third-party-vendor-inspection-text h1 {
+    margin: 0 0 20px;
+
+    color: #003b7a;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.third-party-introduction {
+    margin: 0 0 35px;
+
+    color: #444444;
+    font-size: 1.06rem;
+    line-height: 1.9;
+    text-align: justify;
+}
+
+
+/* ==========================================
+   Two Column Information
+========================================== */
+
+.third-party-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+
+/* ==========================================
+   Lists
+========================================== */
+
+.third-party-standards ul,
+.third-party-assurance ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.third-party-standards li,
+.third-party-assurance li {
+    position: relative;
+
+    margin-bottom: 14px;
+    padding-left: 20px;
+
+    color: #444444;
+    font-size: 1.04rem;
+    line-height: 1.6;
+}
+
+.third-party-standards li::before,
+.third-party-assurance li::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 10px;
+
+    width: 6px;
+    height: 6px;
+
+    background: #ff1f3d;
+}
+
+
+/* ==========================================
+   Assurance Heading
+========================================== */
+
+.third-party-assurance h2 {
+    margin: 0 0 25px;
+
+    color: #333333;
+    font-size: 1.45rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+
+/* ==========================================
+   Responsive - Tablet
+========================================== */
+
+@media (max-width: 992px) {
+
+    .third-party-vendor-inspection-content {
+        padding: 60px 25px 70px;
+    }
+
+    .third-party-vendor-inspection-image img {
+        max-height: 380px;
+    }
+
+    .third-party-vendor-inspection-text h1 {
+        font-size: 2rem;
+    }
+
+    .third-party-introduction {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    .third-party-columns {
+        gap: 40px;
+    }
+
+    .third-party-standards li,
+    .third-party-assurance li {
+        font-size: 1rem;
+    }
+}
+
+
+/* ==========================================
+   Responsive - Mobile
+========================================== */
+
+@media (max-width: 768px) {
+
+    .third-party-vendor-inspection-content {
+        padding: 50px 20px 60px;
+    }
+
+    .third-party-vendor-inspection-image {
+        margin-bottom: 35px;
+    }
+
+    .third-party-vendor-inspection-image img {
+        max-height: none;
+        border-radius: 8px;
+    }
+
+    .third-party-vendor-inspection-text h1 {
+        font-size: 1.7rem;
+        margin-bottom: 20px;
+    }
+
+    .third-party-introduction {
+        font-size: 1rem;
+        line-height: 1.8;
+        text-align: left;
+        margin-bottom: 25px;
+    }
+
+    .third-party-columns {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .third-party-assurance h2 {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+
+    .third-party-standards li,
+    .third-party-assurance li {
+        font-size: 1rem;
+        margin-bottom: 12px;
+    }
+}

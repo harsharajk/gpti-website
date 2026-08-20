@@ -1,0 +1,149 @@
+.civil-inspection-page {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+/* Main Content */
+.civil-inspection-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0 60px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+    align-items: start;
+}
+
+/* Left Side - Images */
+.civil-inspection-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.civil-inspection-images img {
+    width: 100%;
+    height: 195px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Right Side - Explanation */
+.civil-inspection-text {
+    padding-left: 0;
+}
+
+.civil-inspection-text h1 {
+    margin: 0 0 20px;
+
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 700;
+
+    color: #000000;
+}
+
+.civil-inspection-text p {
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 1.9;
+
+    color: #173b61;
+}
+
+/* Responsibilities */
+.civil-inspection-responsibilities {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0 80px;
+}
+
+.civil-inspection-responsibilities ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.civil-inspection-responsibilities li {
+    position: relative;
+
+    margin-bottom: 14px;
+    padding-left: 19px;
+
+    font-size: 16px;
+    line-height: 1.6;
+
+    color: #173b61;
+}
+
+.civil-inspection-responsibilities li::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 9px;
+
+    width: 6px;
+    height: 6px;
+
+    background-color: #ff1f3d;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+
+    .civil-inspection-content {
+        grid-template-columns: 1fr;
+        padding: 70px 30px 50px;
+    }
+
+    .civil-inspection-responsibilities {
+        padding: 0 30px 60px;
+    }
+
+    .civil-inspection-text {
+        order: 1;
+    }
+
+    .civil-inspection-images {
+        order: 2;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .civil-inspection-content {
+        padding: 50px 20px 40px;
+    }
+
+    .civil-inspection-images {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .civil-inspection-images img {
+        height: 220px;
+    }
+
+    .civil-inspection-text h1 {
+        font-size: 30px;
+    }
+
+    .civil-inspection-text p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .civil-inspection-responsibilities {
+        padding: 0 20px 50px;
+    }
+
+    .civil-inspection-responsibilities li {
+        font-size: 15px;
+    }
+}
