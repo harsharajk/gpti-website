@@ -1,0 +1,128 @@
+/* ==========================================
+   WPS, PQR & Welder Qualification Page
+========================================== */
+
+.wps-pqr-welder-page {
+    background: #ffffff;
+}
+
+.wps-pqr-welder-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 20px 80px;
+}
+
+
+/* ==========================================
+   Main Content
+========================================== */
+
+.wps-pqr-welder-text {
+    max-width: 1200px;
+    margin: 0 auto 45px;
+}
+
+.wps-pqr-welder-text h1 {
+    margin: 0 0 25px;
+    color: #003b7a;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.wps-pqr-welder-text p {
+    margin: 0 0 24px;
+    color: #444444;
+    font-size: 1.06rem;
+    line-height: 1.9;
+    text-align: justify;
+}
+
+.wps-pqr-welder-text p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ==========================================
+   Two Images
+========================================== */
+
+.wps-pqr-welder-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+}
+
+.wps-pqr-welder-image {
+    width: 100%;
+}
+
+.wps-pqr-welder-image img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* ==========================================
+   Responsive - Tablet
+========================================== */
+
+@media (max-width: 992px) {
+
+    .wps-pqr-welder-content {
+        padding: 60px 25px 70px;
+    }
+
+    .wps-pqr-welder-text h1 {
+        font-size: 2rem;
+    }
+
+    .wps-pqr-welder-text p {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    .wps-pqr-welder-image img {
+        height: 320px;
+    }
+}
+
+
+/* ==========================================
+   Responsive - Mobile
+========================================== */
+
+@media (max-width: 768px) {
+
+    .wps-pqr-welder-content {
+        padding: 50px 20px 60px;
+    }
+
+    .wps-pqr-welder-text {
+        margin-bottom: 35px;
+    }
+
+    .wps-pqr-welder-text h1 {
+        font-size: 1.7rem;
+        margin-bottom: 20px;
+    }
+
+    .wps-pqr-welder-text p {
+        font-size: 1rem;
+        line-height: 1.8;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .wps-pqr-welder-images {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .wps-pqr-welder-image img {
+        height: auto;
+    }
+}

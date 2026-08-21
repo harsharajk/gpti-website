@@ -212,7 +212,7 @@ const servicesData = [
         image: riskBasedAssetIntegrity,
         description:
             "Risk-Based Inspection (RBI) is an optimal maintenance business process used to examine equipment such as pressure vessels, heat exchangers, tanks and piping in industrial plants.",
-        path: "/services/risk-based-asset-integrity",
+        path: "/services/risk-based-inspection-service",
     },
 
     {
@@ -248,7 +248,7 @@ const servicesData = [
         image: ndtLevelIIIConsultancy,
         description:
             "Our NDT Level III consultants provide technical guidance, procedure qualification, auditing, personnel certification support and advanced inspection consultancy services.",
-        path: "/services/ndt-level-iii-consultancy",
+        path: "/services/ndt-level-3-consultancy",
     },
 
 ];

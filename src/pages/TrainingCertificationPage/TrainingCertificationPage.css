@@ -1,0 +1,137 @@
+/* =========================================
+   TRAINING AND CERTIFICATION PAGE
+   ========================================= */
+
+   .training-certification-page {
+    width: 100%;
+    background: #ffffff;
+    color: #12365a;
+}
+
+.training-certification-content {
+    width: 92%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 80px 0 70px;
+}
+
+/* =========================================
+   CONTENT IMAGE
+   ========================================= */
+
+.training-certification-image {
+    width: 100%;
+    margin-bottom: 38px;
+}
+
+.training-certification-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* =========================================
+   MAIN HEADING
+   ========================================= */
+
+.training-certification-content h2 {
+    margin: 0 0 25px;
+    color: #000000;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* =========================================
+   PARAGRAPHS
+   ========================================= */
+
+.training-certification-content p {
+    margin: 0 0 18px;
+    color: #173b5d;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* =========================================
+   SERVICES LIST
+   ========================================= */
+
+.training-certification-services {
+    list-style: none;
+    padding: 0;
+    margin: 22px 0 0;
+}
+
+.training-certification-services li {
+    position: relative;
+    padding-left: 19px;
+    margin-bottom: 12px;
+    color: #173b5d;
+    font-size: 16px;
+    line-height: 1.55;
+}
+
+.training-certification-services li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 6px;
+    height: 6px;
+    background: #ff2633;
+}
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .training-certification-content {
+        width: 90%;
+        padding: 60px 0;
+    }
+
+    .training-certification-content h2 {
+        font-size: 30px;
+    }
+
+    .training-certification-content p,
+    .training-certification-services li {
+        font-size: 15px;
+    }
+
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .training-certification-content {
+        width: 88%;
+        padding: 45px 0;
+    }
+
+    .training-certification-image {
+        margin-bottom: 28px;
+    }
+
+    .training-certification-content h2 {
+        font-size: 28px;
+        margin-bottom: 22px;
+    }
+
+    .training-certification-content p,
+    .training-certification-services li {
+        font-size: 15px;
+    }
+
+    .training-certification-services {
+        margin-top: 18px;
+    }
+}

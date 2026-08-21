@@ -1,0 +1,236 @@
+/* =========================================
+   HEAT TREATMENT PAGE
+   ========================================= */
+
+   .heat-treatment-page {
+    width: 100%;
+    background: #ffffff;
+    color: #12365a;
+}
+
+
+/* =========================================
+   MAIN CONTENT
+   ========================================= */
+
+.heat-treatment-content {
+    width: 92%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 80px 0 70px;
+}
+
+
+/* =========================================
+   INTRO SECTION
+   ========================================= */
+
+.heat-treatment-intro-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.heat-treatment-intro-text {
+    padding-right: 10px;
+}
+
+.heat-treatment-intro-text h2 {
+    margin: 0 0 28px;
+    color: #000000;
+    font-size: 34px;
+    line-height: 1.15;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.heat-treatment-intro-text p {
+    margin: 0 0 18px;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+    color: #173b5d;
+}
+
+.heat-treatment-intro-text h3 {
+    margin: 22px 0 10px;
+    color: #12365a;
+    font-size: 19px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.heat-treatment-intro-text ul,
+.stress-relieving-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 12px;
+}
+
+.heat-treatment-intro-text li,
+.stress-relieving-content li {
+    position: relative;
+    padding-left: 19px;
+    margin-bottom: 9px;
+    font-size: 16px;
+    line-height: 1.55;
+    color: #173b5d;
+}
+
+.heat-treatment-intro-text li::before,
+.stress-relieving-content li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 6px;
+    height: 6px;
+    background: #ff2633;
+}
+
+
+/* =========================================
+   IMAGE GRID
+   ========================================= */
+
+.heat-treatment-image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.heat-treatment-image-grid img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* =========================================
+   DIVIDER
+   ========================================= */
+
+.heat-treatment-divider {
+    width: 100%;
+    height: 1px;
+    background: #bdbdbd;
+    margin: 38px 0 20px;
+}
+
+
+/* =========================================
+   STRESS RELIEVING SECTION
+   ========================================= */
+
+.stress-relieving-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.stress-relieving-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.stress-relieving-content {
+    padding-top: 5px;
+}
+
+.stress-relieving-content h3 {
+    margin: 0 0 8px;
+    color: #12365a;
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.stress-relieving-content p {
+    margin: 0 0 16px;
+    color: #173b5d;
+    font-size: 16px;
+    line-height: 1.65;
+    text-align: justify;
+}
+
+.stress-relieving-content ul {
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .heat-treatment-content {
+        width: 90%;
+        padding: 60px 0;
+    }
+
+    .heat-treatment-intro-section,
+    .stress-relieving-section {
+        grid-template-columns: 1fr;
+    }
+
+    .heat-treatment-intro-text {
+        padding-right: 0;
+    }
+
+    .heat-treatment-image-grid {
+        margin-top: 20px;
+    }
+
+    .heat-treatment-image-grid img {
+        height: 280px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .heat-treatment-content {
+        width: 88%;
+        padding: 45px 0;
+    }
+
+    .heat-treatment-intro-text h2 {
+        font-size: 28px;
+        margin-bottom: 22px;
+    }
+
+    .heat-treatment-intro-text p,
+    .heat-treatment-intro-text li,
+    .stress-relieving-content p,
+    .stress-relieving-content li {
+        font-size: 15px;
+    }
+
+    .heat-treatment-image-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .heat-treatment-image-grid img {
+        height: auto;
+    }
+
+    .stress-relieving-section {
+        gap: 25px;
+    }
+
+    .stress-relieving-content h3,
+    .heat-treatment-intro-text h3 {
+        font-size: 17px;
+    }
+}

@@ -1,0 +1,161 @@
+/* =========================================
+   NDT LEVEL III CONSULTANCY PAGE
+   ========================================= */
+
+   .ndt-level3-page {
+    width: 100%;
+    background: #ffffff;
+    color: #12365a;
+}
+
+.ndt-level3-content {
+    width: 92%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 80px 0 70px;
+}
+
+
+/* =========================================
+   MAIN IMAGE
+   ========================================= */
+
+.ndt-level3-image {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.ndt-level3-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+
+/* =========================================
+   PAGE TITLE
+   ========================================= */
+
+.ndt-level3-content h2 {
+    margin: 0 0 25px;
+    color: #000000;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+/* =========================================
+   TWO COLUMN CONTENT
+   ========================================= */
+
+.ndt-level3-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    align-items: start;
+}
+
+
+/* =========================================
+   LISTS
+   ========================================= */
+
+.ndt-level3-left ul,
+.ndt-level3-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px;
+}
+
+.ndt-level3-left li,
+.ndt-level3-right li {
+    position: relative;
+    padding-left: 19px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.55;
+    color: #173b5d;
+}
+
+.ndt-level3-left li::before,
+.ndt-level3-right li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 6px;
+    height: 6px;
+    background: #ff2633;
+}
+
+
+/* =========================================
+   PARAGRAPHS
+   ========================================= */
+
+.ndt-level3-left p {
+    margin: 0 0 18px;
+    color: #173b5d;
+    font-size: 16px;
+    line-height: 1.65;
+    text-align: left;
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .ndt-level3-content {
+        width: 90%;
+        padding: 60px 0;
+    }
+
+    .ndt-level3-columns {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .ndt-level3-content h2 {
+        font-size: 30px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .ndt-level3-content {
+        width: 88%;
+        padding: 45px 0;
+    }
+
+    .ndt-level3-image {
+        margin-bottom: 30px;
+    }
+
+    .ndt-level3-content h2 {
+        font-size: 28px;
+        margin-bottom: 22px;
+    }
+
+    .ndt-level3-left li,
+    .ndt-level3-right li,
+    .ndt-level3-left p {
+        font-size: 15px;
+    }
+
+    .ndt-level3-columns {
+        gap: 20px;
+    }
+
+}

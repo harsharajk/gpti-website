@@ -43,6 +43,15 @@ import CivilInspectionPage from "./pages/CivilInspectionPage/CivilInspectionPage
 import PaintingCoatingInspectionPage from "./pages/PaintingCoatingInspectionPage/PaintingCoatingInspectionPage";
 import EIQCHSEOfficerPage from "./pages/EIQCHSEOfficerPage/EIQCHSEOfficerPage";
 import ThirdPartyVendorInspectionPage from "./pages/ThirdPartyVendorInspectionPage/ThirdPartyVendorInspectionPage";
+import ProjectResidentInspectorsPage from "./pages/ProjectResidentInspectorsPage/ProjectResidentInspectorsPage";
+import WpsPqrWelderQualificationPage from "./pages/WpsPqrWelderQualificationPage/WpsPqrWelderQualificationPage";
+import RiskBasedInspectionPage from "./pages/RiskBasedInspectionPage/RiskBasedInspectionPage";
+import InfraredThermographyPage from "./pages/InfraredThermographyPage/InfraredThermographyPage";
+import MagneticFluxLeakagePage from "./pages/MagneticFluxLeakagePage/MagneticFluxLeakagePage";
+import HeatTreatmentPage from "./pages/HeatTreatmentPage/HeatTreatmentPage";
+import TrainingCertificationPage from "./pages/TrainingCertificationPage/TrainingCertificationPage";
+import NDTLevel3ConsultancyPage from "./pages/NDTLevel3ConsultancyPage/NDTLevel3ConsultancyPage";
+import APIInspectionPage from "./pages/APIInspectionPage/APIInspectionPage";
 
 
 function App() {
@@ -182,7 +191,51 @@ function App() {
         element={<ThirdPartyVendorInspectionPage />}
       />
 
-      
+      <Route
+          path="/services/project-resident-inspectors"
+          element={<ProjectResidentInspectorsPage />}
+      />
+
+      <Route
+        path="/services/wps-pqr-welder-qualification"
+        element={<WpsPqrWelderQualificationPage />}
+      />
+
+      <Route
+        path="/services/risk-based-inspection-service"
+        element={<RiskBasedInspectionPage />}
+      />
+
+      <Route
+        path="/services/infrared-thermographic-inspection"
+        element={<InfraredThermographyPage />}
+      />
+
+      <Route
+        path="/services/magnetic-flux-leakage"
+        element={<MagneticFluxLeakagePage />}
+      />
+
+      <Route
+        path="/services/heat-treatment"
+        element={<HeatTreatmentPage />}
+      />
+
+      <Route
+        path="/services/training-certification"
+        element={<TrainingCertificationPage />}
+      />
+
+      <Route
+        path="/services/ndt-level-3-consultancy"
+        element={<NDTLevel3ConsultancyPage />}
+      />
+
+      <Route
+        path="/services/api-inspection-service"
+        element={<APIInspectionPage />}
+      />
+    
        <Route
           path="/quality-policy"
           element={<QualityPolicyPage />}
