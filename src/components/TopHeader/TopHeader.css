@@ -19,6 +19,42 @@
 }
 
 /* ==========================
+   LinkedIn Button
+========================== */
+
+.top-header-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.linkedin-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.linkedin-icon {
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.linkedin-btn:hover {
+    background: #0077b5;
+    border-color: #0077b5;
+}
+
+/* ==========================
    Our Offices Button
 ========================== */
 

@@ -109,7 +109,7 @@ const footerData = {
         },
         {
             title: "View All Services →",
-            path: "/services",
+            path: "/about",
             isViewAll: true,
         },
     ],
