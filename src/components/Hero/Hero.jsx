@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 
 import heroData from "../../data/heroData";
+
 import "./Hero.css";
 
 function Hero() {
@@ -20,6 +22,38 @@ function Hero() {
     });
   }, []);
 
+  // Automatically change hero slide every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((current) => {
+        const nextSlide = (current + 1) % heroData.length;
+
+        setPreviousSlide(current);
+        setIsTransitioning(true);
+
+        // Move Swiper navigation to keep the active card visible
+        if (swiper) {
+          if (nextSlide >= 2) {
+            swiper.slideTo(
+              Math.min(nextSlide - 1, heroData.length - 4)
+            );
+          } else {
+            swiper.slideTo(0);
+          }
+        }
+
+        setTimeout(() => {
+          setIsTransitioning(false);
+        }, 800);
+
+        return nextSlide;
+      });
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [swiper]);
+
+  // Manual card click
   const handleCardClick = (index) => {
     if (index === currentSlide || isTransitioning) return;
 
@@ -33,7 +67,9 @@ function Hero() {
 
     if (swiper) {
       if (index >= 2) {
-        swiper.slideTo(Math.min(index - 1, heroData.length - 4));
+        swiper.slideTo(
+          Math.min(index - 1, heroData.length - 4)
+        );
       } else {
         swiper.slideTo(0);
       }
@@ -44,7 +80,6 @@ function Hero() {
     <section className="hero">
 
       {/* Previous Image */}
-
       {isTransitioning && (
         <img
           src={heroData[previousSlide].image}
@@ -55,29 +90,27 @@ function Hero() {
       )}
 
       {/* Current Image */}
-
       <img
         src={heroData[currentSlide].image}
         alt=""
         className={`hero-image ${
-          isTransitioning ? "hero-image-new" : "hero-image-active"
+          isTransitioning
+            ? "hero-image-new"
+            : "hero-image-active"
         }`}
         draggable="false"
       />
 
       {/* Dark Overlay */}
-
       <div className="hero-overlay"></div>
 
       {/* Hero Content */}
-
       <div className="hero-content" key={currentSlide}>
         <h1>{heroData[currentSlide].title}</h1>
         <p>{heroData[currentSlide].subtitle}</p>
       </div>
 
       {/* Navigation */}
-
       <div className="hero-navigation">
         <Swiper
           onSwiper={setSwiper}
@@ -108,9 +141,13 @@ function Hero() {
                 }`}
                 onClick={() => handleCardClick(index)}
               >
-                <div className="hero-number">{item.id}</div>
+                <div className="hero-number">
+                  {item.id}
+                </div>
 
-                <div className="hero-title">{item.title}</div>
+                <div className="hero-title">
+                  {item.title}
+                </div>
               </div>
             </SwiperSlide>
           ))}

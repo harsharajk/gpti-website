@@ -42,6 +42,11 @@ import contractorCover from "../assets/images/gallery/contractor-award/cover.jpg
 
 import contractor1 from "../assets/images/gallery/contractor-award/1.jpg";
 
+/*sample images added for testing*/
+import sampleCover from "../assets/images/gallery/sample/cover.jpg";
+import sample1 from "../assets/images/gallery/sample/1.jpg";
+import sample2 from "../assets/images/gallery/sample/2.jpg";
+
 const galleryData = {
   pageTitle: "Photo Gallery",
 
@@ -108,6 +113,21 @@ const galleryData = {
       ],
     },
 
+
+    {
+      id: 4,
+      slug: "sample",
+      title: "Adding Sample Event",
+      date: "2026",
+      description:
+          "Photographs from the Sample Event.",
+      coverImage: sampleCover,
+      images: [
+          sample1,
+          sample2,
+      ],
+    },
+
     {
       id: 3,
 
@@ -130,6 +150,8 @@ const galleryData = {
         safety5,
       ],
     },
+
+    
   ],
 };
 
